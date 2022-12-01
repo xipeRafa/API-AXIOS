@@ -1,0 +1,22 @@
+{
+  "productos": [
+    {
+      "nombre": "qqq",
+      "precio": "2222",
+      "toggle": false,
+      "id": 1669887104416
+    },
+    {
+      "nombre": "qqq",
+      "precio": "2",
+      "toggle": false,
+      "id": 1669887119946
+    },
+    {
+      "nombre": "wwwwq",
+      "precio": "1",
+      "toggle": false,
+      "id": 1669887152096
+    }
+  ]
+}

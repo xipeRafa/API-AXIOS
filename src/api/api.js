@@ -22,8 +22,8 @@ export const editTodo = (id, todo) => axios.patch(`${url}/${id}`, todo);
  
 
 
-export const toggleTodo = (id, todo) => axios.patch(`${url}/${id}`, todo);
-/*export const toggleTodo = (id) => axios.put(`${url}/${id}`); */
+/* export const toggleTodo = (id, todo) => axios.patch(`${url}/${id}`, todo); */
+export const toggleTodo = (id, todo) => axios.put(`${url}/${id}`, todo); 
 
 
 

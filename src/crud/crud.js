@@ -22,8 +22,7 @@ export const createTodo = async (todo) => {
 
 export const editTodo = async (id, todo) => {
   try {
-    const { data } = await api.editTodo(id, todo);
-    return data;
+    await api.editTodo(id, todo);
   } catch (error) {
     console.log(error);
     console.log('error en editTodo');
@@ -32,8 +31,7 @@ export const editTodo = async (id, todo) => {
 
 export const toggleTodo = async (id, todo) => {
   try {
-    const { data } = await api.toggleTodo(id, todo);
-    return data;
+    await api.toggleTodo(id, todo);
   } catch (error) {
     console.log(error);
     console.log('error en toggleTodo');
@@ -42,8 +40,7 @@ export const toggleTodo = async (id, todo) => {
 
 export const deleteTodo = async (id) => {
   try {
-    const { data } = await api.deleteTodo(id);
-    return data;
+    await api.deleteTodo(id);
   } catch (error) {
     console.log(error);
     console.log('error en deleteTodo');

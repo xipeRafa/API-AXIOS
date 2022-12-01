@@ -9,16 +9,12 @@ const App = () => {
 
   const [refresh, setRefresh]=useState(false)
 
-  useEffect(()=>{
+
     const fetchData = async () => {
       const result = await readTodos();
         setTodos(result)
         console.log(result)
     }
-    fetchData()
-  },[refresh])
-
-
 
   const handleEdit = (todo) => {
     setTodo(todo);
@@ -58,7 +54,7 @@ const App = () => {
 
 
   const {nombre, precio}=todo
-
+  useEffect(()=>{    fetchData() },[refresh])
   return (
     <div className="container">
       <div className="row">
